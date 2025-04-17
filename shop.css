@@ -93,7 +93,6 @@ nav .nav-links li a:hover {
 .produit p {
     color: #777;
     margin-bottom: 20px;
-    height: 170px;
 }
 
 .produit button {
@@ -156,7 +155,7 @@ footer ul li a:hover {
     nav .logo a {
         font-size: 22px;
     }
-    
+
     footer ul {
         margin-top: 20px;
         text-align: center;
@@ -167,17 +166,19 @@ footer ul li a:hover {
     .produits-container {
         grid-template-columns: 1fr;
     }
-    /* Requêtes Média pour les dimensions selon l'appareil */
-@media screen and (max-width: 1024px) {
-    .produits-container {
-        grid-template-columns: repeat(3, 1fr);  /* 3 produits par ligne */
-    }
 
-    /* Ajuster la taille du texte du menu de navigation */
-    nav .nav-links {
-        font-size: 16px;
+    /* Requêtes Média pour les dimensions selon l'appareil */
+    @media screen and (max-width: 1024px) {
+        .produits-container {
+            grid-template-columns: repeat(3, 1fr);
+            /* 3 produits par ligne */
+        }
+
+        /* Ajuster la taille du texte du menu de navigation */
+        nav .nav-links {
+            font-size: 16px;
+        }
     }
-}
 
     .produit {
         margin-bottom: 20px;
